@@ -25,11 +25,11 @@ public class Atividade2While {
 		
 	
 		
-		while(x<2)
+		while(x<150)
 		{
 			x++;
 						
-			System.out.print("\nDigite sua idade: ");
+			System.out.print("-------------\nDigite sua idade: ");
 			idade = ler.nextInt();
 			System.out.print("\n1-Femino\n2-Masculino\n3-Outros\nDigite seu sexo: ");
 			sexo = ler.nextInt();
@@ -42,28 +42,27 @@ public class Atividade2While {
 				
 			}
 			
-			else if (sexo==1 && p==2)
+			if (sexo==1 && p==2)
 			{
 				mN++;
 			}
-			else if(sexo==2 && p==3)
+			if(sexo==2 && p==3)
 			{
 				hA++;
 			}
-			else if(sexo==3 && p==1)
+			if(sexo==3 && p==1)
 			{
 				oC++;
 			}
-			else if(idade>40 && p==2)
+			if(idade>40 && p==2)
 			{
-				nMais++;
+				nMais40++;
 			}
 			else if(idade<18 && p==1)
 			{
 				cMenor18++;
 			}
-			
-			
+				
 		}
 		System.out.print("\nNúmero de pessoas calmas: "+tC);
 		System.out.print("\nNúmero de mulheres nervosas: "+mN);
